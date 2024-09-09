@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You’ve Been Pranked!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            animation: backgroundMove 8s infinite alternate;
+        }
+
+        @keyframes backgroundMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .container {
+            color: #333;
+            padding: 40px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            animation: fadeIn 2s ease-in-out;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        .title {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: popIn 1.5s ease-in-out;
+        }
+
+        .message {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #555;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .cute-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            animation: bounce 1.5s infinite alternate;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .cute-image:hover {
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h3 {
+            margin-top: 20px;
+            font-size: 1.8em;
+            color: #ff6363;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        b {
+            font-size: 1.1em;
+            line-height: 1.5em;
+            color: #333;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes popIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Media Query for mobile responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            .title {
+                font-size: 2.5em;
+            }
+
+            .message {
+                font-size: 1.2em;
+            }
+
+            h3 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Surprise!</h1>
+        <p class="message">You’ve been pranked! Enjoy this cute image instead!</p>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2ND3Mfo08cpixQoHErL-9baOnqgChzYYu-GBgQRdjPowJfODB_r57FTwZC2JMfcqqaAmSMse06t9y6IAsCa9JsjtQ9f9UWv9BrhoA6KnR5E5CIdVdLnH7dWifuNtJDa6teX6J9UhB2mBuGa3PVbXwlH3UOte3DEes5oZblu9YuDIeUYg2GQUhYASA1XBo/s275/images.jpeg" alt="Cute Kitten" class="cute-image">
+        <h3>Disclaimer</h3>
+        <b>"This was an awareness program by z0m.site. Do not click on links like this on WhatsApp. All such links are fake and are used to collect your personal data, which may be misused or sold. However, your data is 100% safe; we have not stored any of your information."</b>
+    </div>
+</body>
+</html>
