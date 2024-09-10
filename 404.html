@@ -3,38 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You’ve Been Pranked!</title>
+    <title>Important Safety Notice</title>
     <style>
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            background: linear-gradient(135deg, #8ed1fc, #56cc9d);
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
+            color: #333;
             overflow: hidden;
-            animation: backgroundMove 8s infinite alternate;
-        }
-
-        @keyframes backgroundMove {
-            0% {
-                background-position: 0% 50%;
-            }
-            100% {
-                background-position: 100% 50%;
-            }
         }
 
         .container {
-            color: #333;
             padding: 40px;
             border-radius: 15px;
-            background: rgba(255, 255, 255, 0.85);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            background: #ffffff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             max-width: 600px;
-            animation: fadeIn 2s ease-in-out;
             transition: transform 0.3s ease;
         }
 
@@ -43,38 +32,29 @@
         }
 
         .title {
-            font-size: 3.5em;
+            font-size: 2.5em;
             margin-bottom: 15px;
-            background: linear-gradient(135deg, #f093fb, #f5576c);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #4caf50;
             animation: popIn 1.5s ease-in-out;
         }
 
         .message {
-            font-size: 1.5em;
+            font-size: 1.2em;
             margin-bottom: 20px;
             color: #555;
-            animation: fadeIn 3s ease-in-out;
         }
 
-        .cute-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        .info-icon {
+            font-size: 4em;
+            color: #4caf50;
+            margin-bottom: 20px;
             animation: bounce 1.5s infinite alternate;
-            transition: box-shadow 0.3s ease;
-        }
-
-        .cute-image:hover {
-            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
         }
 
         h3 {
             margin-top: 20px;
             font-size: 1.8em;
-            color: #ff6363;
+            color: #ff9800;
             animation: slideIn 1.5s ease-in-out;
         }
 
@@ -82,17 +62,6 @@
             font-size: 1.1em;
             line-height: 1.5em;
             color: #333;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         @keyframes popIn {
@@ -133,11 +102,7 @@
             }
 
             .title {
-                font-size: 2.5em;
-            }
-
-            .message {
-                font-size: 1.2em;
+                font-size: 2.2em;
             }
 
             h3 {
@@ -148,11 +113,23 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="title">Surprise!</h1>
-        <p class="message">You’ve been pranked! Enjoy this cute image instead!</p>
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2ND3Mfo08cpixQoHErL-9baOnqgChzYYu-GBgQRdjPowJfODB_r57FTwZC2JMfcqqaAmSMse06t9y6IAsCa9JsjtQ9f9UWv9BrhoA6KnR5E5CIdVdLnH7dWifuNtJDa6teX6J9UhB2mBuGa3PVbXwlH3UOte3DEes5oZblu9YuDIeUYg2GQUhYASA1XBo/s275/images.jpeg" alt="Cute Kitten" class="cute-image">
-        <h3>Disclaimer</h3>
-        <b>"This was an awareness program by z0m.site. Do not click on links like this on WhatsApp. All such links are fake and are used to collect your personal data, which may be misused or sold. However, your data is 100% safe; we have not stored any of your information."</b>
+        <div class="info-icon">ℹ️</div>
+        <h1 class="title">Stay Informed, Stay Safe!</h1>
+        <h3>Important Awareness Notice</h3>
+        <b>"This is a friendly reminder from z0m.site to be cautious when clicking on links shared through WhatsApp or other platforms. Some links may attempt to collect your personal information without your consent. Always verify the source before sharing personal details."</b>
+        <p class="message">Rest assured, your data is safe with us. This campaign is designed to raise awareness, and no personal information has been collected.</p>
     </div>
+    <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4762877,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4762877&101" alt="counter easy hit" border="0"></a></noscript>
+<!-- Histats.com  END  -->
 </body>
 </html>
